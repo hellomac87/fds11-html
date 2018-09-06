@@ -19,7 +19,10 @@
     <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Web Cafe-html5,css3,웹접근성</title> 
+    <title>Web Cafe-html5,css3,웹접근성</title>
+    
+    <link rel="shortcut icon" href="images/common/webcafe.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     
@@ -27,3 +30,28 @@
 </html>
 ```
 ---
+
+## 디자인이 아닌 컨텐츠 중심의 markup
+- class naming case "main menu"
+    - PC : MainMenu
+    - CC : mainMenu
+    - SC : main_menu
+    - KC : main-menu <
+> 선택은 자유, 트렌드는 있음
+---
+
+## 구조
+```html
+<body>
+    <div class="container">
+        <header class="header">header</header>
+        <div class="visual">visual</div>
+        <div class="main">main</div>
+        <article class="slogan">slogan</article>
+        <footer class="footer">footer</footer>        
+    </div>
+</body>
+```
+
+## CSS
+- vendor prefix
