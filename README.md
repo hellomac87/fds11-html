@@ -74,7 +74,11 @@
 }
 ```
 
-- property : order
+- (css) property : order
     - flex-item 의 순서를 결정
 
-- [float clear](http://naradesign.net/wp/2008/05/27/144/)
+- (css) float을 clear하는 4가지 방법. [Link](http://naradesign.net/wp/2008/05/27/144/)
+
+- (html) tabindex="0" - html attr : 원래 탭 입력시 포커스되지 않는 영역을 포커스되도록 할 수 있는 html attr
+
+- (css) position : sticky [Link - DemoSite](http://html5-demos.appspot.com/static/css/sticky.html)
