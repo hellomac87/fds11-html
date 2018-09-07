@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>box models</title>
+
+    <style>
+    .content-box{
+        background: yellow;
+        width:500px;
+        height: 300px;
+        border: 10px solid blue;
+        padding:20px 50px 30px;
+        margin:50px;
+        box-sizing: content-box;
+    }
+    .border-box{
+        background: yellow;
+        width:500px;
+        height: 300px;
+        border: 10px solid blue;
+        padding:20px 50px 30px;
+        margin:50px;
+        box-sizing: border-box;
+    }
+    </style>
+</head>
+<body>
+    <div class="content-box">
+        contents-box
+    </div>
+    <div class="border-box">
+        border-box
+    </div>
+</body>
+</html>

@@ -55,3 +55,24 @@
 
 ## CSS
 - vendor prefix
+
+## web accessbility
+### ARIA (Accessible Rich Internet Applications))
+- [ARIA-MDN](https://developer.mozilla.org/ko/docs/Web/Accessibility/ARIA)
+- [ARIA-github](https://github.com/w3c/using-aria/)
+- [ARIA-using](https://w3c.github.io/using-aria/#do)
+
+---
+
+## flex
+- [flex](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+```css
+.elem{
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+```
+
+- property : order
+    - flex-item 의 순서를 결정
