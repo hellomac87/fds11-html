@@ -1,0 +1,81 @@
+@charset "utf-8";
+/* @import url('reset.css');
+@import url('normalize.css'); */
+
+body{
+    margin: 0;
+}
+h1, h2, h3, h4, h5, h6{
+    font-size: 1em;
+    font-weight: normal;
+    margin: 0;
+}
+/* layout */
+.container{
+    background-color: #aaa;
+    height: 100vh;
+}
+.clearfix::after{
+    content: '';
+    display: block;
+    clear:both;
+}
+.header, .visual, .main, .slogan, .footer{
+    width:940px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+/* header */
+.header{
+    height: 10vh;
+    background-color: lightyellow;
+}
+
+/* visual */
+.visual{
+    height: 10vh;
+    background-color: tomato;
+}
+
+/* main */
+.main{
+    /* height: 60vh; */
+    background-color: powderblue;
+    /* overflow: hidden; */
+}
+
+.group{
+    height: 100px;
+}
+.group1{
+    width:250px;
+    background-color: palevioletred;
+    float:left;
+    position: relative;
+    left:-50px;
+}
+.group2{
+    width:380px;
+    background-color: lightsalmon;
+    float:left;
+}
+.group3{
+    width:190px;
+    background-color: lightpink;
+    float:left;
+}
+
+/* slogan */
+.slogan{
+    height: 10vh;
+    background-color: olive;
+}
+
+/* footer */
+.footer-bg{
+    background-color: purple;
+}
+.footer{
+    height: 10vh;
+    background-color: palevioletred;
+}

@@ -76,3 +76,5 @@
 
 - property : order
     - flex-item 의 순서를 결정
+
+- [float clear](http://naradesign.net/wp/2008/05/27/144/)
