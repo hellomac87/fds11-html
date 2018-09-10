@@ -54,6 +54,13 @@ selector{
     align-items: stretch;
 }
 ```
+
+### Reset CSS
+- 여백 초기화
+### Normalize CSS
+- [https://github.com/necolas/normalize.css](https://github.com/necolas/normalize.css)
+### html5 SHIV
+- 구형 브라우저에서 지원하지 않는 태그를 자바스크립트를 통해 생성해주는 JS 라이브러리
 ---
 
 ## web accessbility
