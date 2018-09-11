@@ -63,13 +63,22 @@ selector{
 
 ### Reset CSS
 - 여백 초기화
+
 ### Normalize CSS
 - [https://github.com/necolas/normalize.css](https://github.com/necolas/normalize.css)
+
 ### html5 SHIV
 - 구형 브라우저에서 지원하지 않는 태그를 자바스크립트를 통해 생성해주는 JS 라이브러리
 ---
 
+## Js
+- html5 `<script></script>` (defer, async...)속성 [MDN](https://developer.mozilla.org/ko/docs/Web/HTML/Element/script)
+- 
+- 
+---
+
 ## web accessbility
+
 ### ARIA (Accessible Rich Internet Applications))
 - [ARIA-MDN](https://developer.mozilla.org/ko/docs/Web/Accessibility/ARIA)
 - [ARIA-github](https://github.com/w3c/using-aria/)
