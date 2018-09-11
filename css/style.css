@@ -1,6 +1,7 @@
 @charset "utf-8";
 @import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css');
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,700');
+@import url('fonts.css');
 
 /* 스타일 초기화 */
 html, body, div, span, applet, object, iframe,
@@ -132,7 +133,7 @@ a{
 
 /* 메인 메뉴 */
 .navigation{
-    padding-bottom: 50px;
+    padding-bottom: 40px;
 }
 .menu{
     background-color: #f37335;
@@ -140,12 +141,16 @@ a{
     border-top: 2px solid #000;
     padding-left: 225px;
     border-radius: 0 0 5px 5px;
-    position: relative;
+    height: 47px;
 }
 .menu-item{
     float:left;
+    position: relative;
     /* height: 45px; */
     border-left: 2px solid rgba(255,255,255,.5);
+}
+.menu-item:focus,.sub-menu a:focus{
+    outline: 0;
 }
 .menu-item-text{
     display: block;
@@ -162,20 +167,51 @@ a{
     0 -1px 0 #000;
     cursor: pointer;
 }
+.menu-act .menu-item-text{
+    color:#ff0;
+}
+.menu-act .menu-item-text::after{
+    content:'';
+    display: block;
+    height: 2px;
+    background: #000;
+}
 .sub-menu{
     position: absolute;
-    top:44px;
-    background: skyblue;
-    /* white-space: nowrap; */
+    top:47px;
+    white-space: nowrap;
     display: none;
 }
-.sub-menu li{
-    /* display: inline-block; */
+.sub-menu li, .sub-menu a{
+    display: inline-block;
+}
+.sub-menu a{
+    padding: 8px 0;
+    margin-right: 10px;
+}
+/* .sub-menu a:before{
+    content: "r";
+    font-family: "webcafeIcon";
+    position: relative;
+    top: 2px;
+}
+.sub-menu a:hover::before,
+.sub-menu a:focus::before{
+    content: "c";
+} */
+.menu-act .sub-menu{
+    display: block;
+}
+.menu-item:nth-child(-n+3) .sub-menu{
+    left:0;
+}
+.menu-item:nth-child(n+4) .sub-menu{
+    right:0;
 }
 /* visual */
 .visual{
     height: 10vh;
-    background-color: lime;
+    background-color: transparent;
 }
 
 /* main */

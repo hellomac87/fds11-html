@@ -55,6 +55,12 @@ selector{
 }
 ```
 
+### tabindex
+- html attribute
+- 중립 태그 (ex/ div)를 키보드 탭 입력시 포커스 돠도록 해주는 html attribute
+- tabindex=0 : noraml flow, 마크업 순서에 따라 적용된다
+- tabindex= 1 이상, 숫자에 따라 문서에서 가장 먼저 포커스됨
+
 ### Reset CSS
 - 여백 초기화
 ### Normalize CSS
