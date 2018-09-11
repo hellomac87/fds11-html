@@ -95,13 +95,15 @@ a{
     background-color: #fff;
     position: relative;
     padding:0 30px;
+    border-radius: 0 0 15px 15px;
 }
 /* logo */
 .logo{
     position: absolute;
     top: 50px;
     left: 65px;
-    background: tomato;
+    z-index: 100;
+    /* background: tomato; */
 }
 /* memeber link */
 .member{
@@ -128,10 +130,52 @@ a{
     padding-right: 0;
 }
 
+/* 메인 메뉴 */
+.navigation{
+    padding-bottom: 50px;
+}
+.menu{
+    background-color: #f37335;
+    background-image: linear-gradient(to bottom, #fdc830 0%, #f37335 30%, #f37335 60%, #fdc830 100%);
+    border-top: 2px solid #000;
+    padding-left: 225px;
+    border-radius: 0 0 5px 5px;
+    position: relative;
+}
+.menu-item{
+    float:left;
+    /* height: 45px; */
+    border-left: 2px solid rgba(255,255,255,.5);
+}
+.menu-item-text{
+    display: block;
+    color:#ffffff;
+    padding:0 20px;
+    text-align: center;
+    font-weight:700;
+    font-size:1.6rem;
+    line-height: 45px;
+    text-shadow: 
+    1px 0 0 #000, 
+    0 1px 0 #000,
+    -1px 0 0 #000,
+    0 -1px 0 #000;
+    cursor: pointer;
+}
+.sub-menu{
+    position: absolute;
+    top:44px;
+    background: skyblue;
+    /* white-space: nowrap; */
+    display: none;
+}
+.sub-menu li{
+    /* display: inline-block; */
+}
 /* visual */
 .visual{
     height: 10vh;
-    background-color: tomato;
+    background-color: lime;
 }
 
 /* main */
