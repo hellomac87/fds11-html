@@ -305,12 +305,101 @@ a{
     width:250px;
     background-color: rgba(0,0,0,0.1);
 }
+
 .login{
+    padding: 10px;
+    background-image: radial-gradient(circle at left top, #f35626,#feab3a);
+    border-radius: 10px;
+    box-shadow: 5px 5px 0 0 #aaa;
+}
+.login-heading{
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-indent: 10px;
+    margin-bottom:5px;
+}
+.login form{
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px 5px 0 0;
     
+}
+.login fieldset{
+    border:0;
+    padding:0 0 10px 0;
+    margin:0;
+    border-bottom:1px solid #eee;
+}
+.login label{
+    width:35%;
+}
+.login input{
+    width:65%;
+    padding:3px 5px;
+}
+.user-id, .user-pw{
+    width:73%;
+    float:left;
+    margin-right: 1%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size:1.2rem;
+}
+.user-id{
+    margin-bottom: 5px;
+}
+.user-pw{
+    
+}
+.btn-login{
+    width:26%;
+    height: 51px;
+    font-size:1.2rem;
+    color:#fff;
+    background: #f35626;
+    border:0;
+}
+.login .sign{
+    padding:0 10px 10px 10px;
+    background-color: #fff;
+    border-radius: 0 0 5px 5px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size:1.1rem;
+    font-weight: normal;
+}
+.login .sign li::before{
+    content:'g';
+    font-family: 'webcafeIcon';
+    position: relative;
+    top:1px;
+    color:#f35626;
 }
 .group2{
     width:380px;
     background-color: rgba(0,0,0,0.1);
+}
+.abcwarp{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 100px;
+}
+.c {
+  flex: 0 0 100%;
+  background: red;
+}
+
+.b, .a {
+  flex: 0 0 50%;
+  background: green;
+}
+
+.b {
+  background: blue;
 }
 .group3{
     width:190px;
