@@ -2,6 +2,7 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css');
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,700');
 @import url('fonts.css');
+@import url('animation.css');
 
 /* 스타일 초기화 */
 html, body, div, span, applet, object, iframe,
@@ -70,7 +71,10 @@ html{
 }
 body{
     color:#181818;
-    background: #fff;
+    background: 
+    url('images/bg_flower.png') no-repeat 50% 0,
+    linear-gradient(to bottom, #aaa, #eee);
+
     font-family: 'Noto Sans KR', sans-serif;
     font-size:1.4rem;
 }
@@ -85,7 +89,8 @@ a{
 
 }
 .container{
-    background-color: #aaa;
+    /* background: url('images/bg_flower.png') no-repeat 50% 0, linear-gradient(to bottom, #ccc, #eee 45%, #fff 70%, #fff 100%) repeat;
+    background-color: #ccc; */
 }
 .header, .visual, .main, .slogan, .footer{
     width:940px;
@@ -126,6 +131,14 @@ a{
     font-size:1.4rem;
     text-transform: uppercase;
     padding: 8px 10px;
+}
+.site__title {
+    color: #f35626;
+    background-image: -webkit-linear-gradient(92deg,#f35626,#feab3a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: hue 60s infinite linear;
+    background-color: white;
 }
 .member li:last-child a{
     padding-right: 0;
@@ -208,16 +221,78 @@ a{
 .menu-item:nth-child(n+4) .sub-menu{
     right:0;
 }
+
 /* visual */
 .visual{
-    height: 10vh;
+    min-height: 120px;
     background-color: transparent;
+    position: relative;
+    /* overflow: hidden; */
 }
+.visual::after,.visual::before{
+    content:"";
+    position: absolute;
+    top:0;
+    bottom:0;
+    width:100%;
+    height:100%;
 
+    /* animation-name:flowerAni;
+    animation-duration: 3000ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; */
+
+    animation: flowerAni 2s forwards infinite alternate;
+}
+.visual::before { 
+    background: 
+    url("images/ani_flower_03.png") no-repeat 300px 0, 
+    url("images/ani_flower_04.png") no-repeat 800px 15px;
+    animation-delay: 1000ms;
+}
+.visual::after{
+    background: 
+    url("images/ani_flower_01.png")no-repeat 0 -10px,
+    url("images/ani_flower_02.png")no-repeat 670px 0;
+}
+@keyframes flowerAni{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1.02);
+    }
+}
+@keyframes textAni{
+    0% {
+        color: rgba(0,0,0,0.1);
+        font-size: 12px;
+        /* transform:translate(0,0); */
+        top:0;
+        left:0;
+    }
+    100% {
+        color: rgba(0,0,0,1);
+        font-size: 24px;
+        /* transform:translate(400px , 75px); */
+        top:75px;
+        left:400px;
+    }
+}
+.visual-text{
+    position: absolute;
+    display: inline-block;
+    animation-duration: 3000ms;
+    /* animation-timing-function: cubic-bezier(.05,-0.85,.1,1.74); */
+    animation-name: textAni;
+    animation-fill-mode: forwards;
+    font-family: serif;
+}
 /* main */
 .main{
     height: 60vh;
-    background-color: powderblue;
+    background-color: #fff;
     padding: 30px 0;
     display: flex;
     flex-direction: row;
@@ -228,21 +303,31 @@ a{
 }
 .group1{
     width:250px;
-    background-color: skyblue;
+    background-color: rgba(0,0,0,0.1);
+}
+.login{
+    
 }
 .group2{
     width:380px;
-    background-color: skyblue;
+    background-color: rgba(0,0,0,0.1);
 }
 .group3{
     width:190px;
-    background-color: skyblue;
+    background-color: rgba(0,0,0,0.1);
 }
 
 /* slogan */
 .slogan{
+    font-size:2.4rem;
+    text-align: center;
     height: 10vh;
-    background-color: olive;
+
+    color: #f35626;
+    background-image: -webkit-linear-gradient(92deg,#f35626,#feab3a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: hue 60s infinite linear;
 }
 
 /* footer */
