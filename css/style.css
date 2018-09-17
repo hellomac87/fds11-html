@@ -397,7 +397,7 @@ a{
 .validation-list li a:hover,.validation-list li a:focus{
     color:#f37335;
 }
-
+/*
 .web-terms{
     background: linear-gradient(to bottom, #ccc, #eee);
     background-color: #ccc;
@@ -417,28 +417,55 @@ a{
 .terms dt{
     color:#296897;
 }
+*/
+
+/* 웹 관련 용어 */
+.term{
+    border:1px solid #aaa;
+    border-radius: 5px;
+    padding:10px 15px;
+    background: #aaa;
+    background: linear-gradient(to bottom, #bbb,#eee);
+}
+.term-heading{
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.term-list{
+    margin-top: 10px;
+}
+.term-list-subject,.term-list-brief{
+    float:right;   
+    width:145px;
+}
+.term-list > div{
+    margin-top:10px;
+}
+.term-list > div:nth-child(even) .term-list-subject,
+.term-list > div:nth-child(even) .term-list-brief{
+    float:left;
+}
+.term-list-subject{
+    color:#296897;
+}
+.term-list-thumbnail{
+    float:left;
+}
+.term-list > div:nth-child(even) .term-list-thumbnail{
+    float:right;
+}
+.term-list-thumbnail img{
+    display: block;
+}
+.term-list-brief{
+    margin-top:10px;
+}
+.odd{
+    margin-bottom: 10px;
+}
 .group2{
     width:380px;
     background-color: rgba(0,0,0,0.1);
-}
-.abcwarp{
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  height: 100px;
-}
-.c {
-  flex: 0 0 100%;
-  background: red;
-}
-
-.b, .a {
-  flex: 0 0 50%;
-  background: green;
-}
-
-.b {
-  background: blue;
 }
 .group3{
     width:190px;
