@@ -20,3 +20,12 @@ $subItem.attr("class", "fas fa-angle-left");
 $subItem.hover(function(){
     $(this).toggleClass("fa-angle-right");
 });
+
+
+var $tab = $('.tab');
+
+$tab.attr("tabindex", "0");
+$tab.on("focusin click", function(){
+    $(this).parent().siblings().removeClass("tab-act");
+    $(this).parent().addClass('tab-act');
+});
