@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ir 기법</title>
+    <style>
+        .logo{
+            width:290px;
+            height:195px;
+            box-sizing: border-box;
+            position:relative;
+            text-align: center;
+            font-size: 12px;
+        }
+        .logo::after{
+            content:'';
+            background: url('../images/title.png') no-repeat;
+            position:absolute;
+            top:0;
+            left:0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="logo">CSS Zen Garden</h1>
+</body>
+</html>
