@@ -1,6 +1,7 @@
 @charset "utf-8";
 @import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css');
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,700');
+/* @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,700'); */
+@import url('//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css');
 @import url('fonts.css');
 @import url('animation.css');
 
@@ -75,7 +76,7 @@ body{
     url('images/bg_flower.png') no-repeat 50% 0,
     linear-gradient(to bottom, #aaa, #eee);
 
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Spoqa Han Sans', 'Sans-serif'; 
     font-size:1.4rem;
 }
 /* 하이퍼 링크 스타일 */
@@ -662,11 +663,84 @@ a{
 }
 .group3{
     width:190px;
-    background-color: rgba(0,0,0,0.1);
 }
 
+/* event-related */
+.event-related{
+    padding:10px;
+    background: linear-gradient(to bottom, #ccc, #eee);
+    background-color: #ccc;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+.event{
+    border-bottom:1px solid #aaa;
+    position: relative;
+    margin-bottom:10px;
+}
+.event-related-heading{
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.event-related-heading > span{
+    color: #ed552f;
+}
+.event-detail{
+    margin-top: 10px;
+}
+.event-thumbnail{
+    margin-bottom: 10px;
+}
+.event-thumbnail img{
+    box-shadow: 5px 5px 2px rgba(0,0,0,0.3);
+}
+.event-brief{
+    padding-bottom: 10px;
+}
+.btn-event{
+    position: absolute;
+    top:0;
+    right:0;
+}
+.btn-event > button{
+    background-image: url('images/back_forward.png');
+    background-repeat: no-repeat;
+    width:19px;
+    height: 18px;
+    text-indent: 20px;
+    overflow: hidden;
+}
+.btn-event-prev{
+    background-position: left center;
+}
+.btn-event-next{
+    background-position: right center;
+}
 
-
+.related{
+}
+.related-list{
+    background-color: #fff;
+    margin-top: 10px;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    height: 27px;
+    overflow: hidden;
+    transition: all 500ms ease-in-out;
+}
+/* .related-list:hover,.related-list:focus{
+    height: 137px;
+    padding: 5px 0;
+} */
+.related-list.act{
+    height: 137px;
+    padding: 5px 0;
+}
+.related-list a{
+    display: block;
+    line-height: 25px;
+    text-indent: 1em;
+}
 /* slogan */
 .slogan{
     font-size:2.4rem;

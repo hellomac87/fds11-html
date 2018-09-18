@@ -29,3 +29,12 @@ $tab.on("focusin click", function(){
     $(this).parent().siblings().removeClass("tab-act");
     $(this).parent().addClass('tab-act');
 });
+
+var $relatedList = $(".related-list");
+
+$relatedList.on('focusin mouseover',function(){
+    $(this).addClass('act');
+});
+$relatedList.on("focusout mouseleave", function() {
+    $(this).removeClass("act");
+});

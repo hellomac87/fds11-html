@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>sprite</title>
+
+    <style>
+        .btn-wrap{
+            background: yellow;
+        }
+        .btn{
+            display: inline-block;
+            width:20px;
+            height: 19px;
+            background: pink;
+            background-image: url('../css/images/backpage_forwardpage.png');
+            background-repeat: no-repeat;
+            text-indent: 20px;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+        .btn-prev{
+            background-position: left center;
+        }
+        .btn-next{
+            background-position: right center;
+        }
+    </style>
+</head>
+<body>
+    <div class="btn-wrap">
+        <span class="btn btn-prev">prev</span>
+        <span class="btn btn-next">next</span>
+    </div>
+</body>
+</html>
