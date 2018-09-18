@@ -592,6 +592,74 @@ a{
     font-family: "WebcafeIcon";
 }
 
+/* news */
+.news{
+    position: relative;
+}
+.news::before {
+    content: "";
+    position: absolute;
+    top: 35px;
+    left: 0;
+    width: 80%;
+    height: 1px;
+    background: linear-gradient(to right, #aaa, #eee);
+    background-color: #aaa;
+}
+.news-heading{
+    font-weight: 700;
+    color: #ed552f;
+    font-size: 1.5rem;
+}
+.news-link {
+    display: block;
+    margin-top: 35px;
+}
+.news-item{
+    
+}
+.news-item-heading, .news-item-date, .news-item-brief{
+    float:right;
+    width:calc(100% - 130px);
+}
+.news-item-heading{
+    font-weight:700;
+}
+.news-item-date{
+    font-size:1.2rem;
+    margin-bottom: 10px;
+}
+.news-item-brief{
+    font-size:1.25rem;
+    text-align: justify;
+}
+.news-item-thumbnail{
+    width:112px;
+    float:left;
+    position: relative;
+    top:-45px;
+}
+.news-item-thumbnail img{
+    box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+}
+.news-item-thumbnail figcaption{
+    margin-top: 10px;
+    text-align: center;
+    font-size:1.25rem;
+}
+.news-more{
+    position: absolute;
+    top: 0;
+    right: -8px;
+    padding: 8px;
+}
+.news-more::before{
+    color:#f35626;
+    position: relative;
+    top:1px;
+    content: "p";
+    font-family: "WebcafeIcon";
+}
 .group3{
     width:190px;
     background-color: rgba(0,0,0,0.1);
