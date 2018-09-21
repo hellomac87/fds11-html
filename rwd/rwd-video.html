@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>rwd-video</title>
+
+    <style>
+        body{
+            margin:0;
+        }
+        .rwd-container{
+            width:50%;
+            background: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="rwd-container">
+        <video autoplay controls poster="../media/poster.jpg" muted>
+            <source src="../media/stories.mp4">
+                <track src="../media/stories-en.vtt" kind="captions" srclang="en" label="english">
+        </video>
+    </div>
+</body>
+</html>
